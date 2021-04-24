@@ -24,8 +24,13 @@ Biraz da kutu çizelim
 |3|2|1|  
 doğru mudur hocam.  
 
-Saygılarımla
+Saygılarımla  
 
+| Priority apples | Second priority | Third priority |
+|-------|--------|---------|
+| ambrosia | gala | red delicious |
+| pink lady | jazz | macintosh |
+| honeycrisp | granny smith | fuji |
 
 
 
