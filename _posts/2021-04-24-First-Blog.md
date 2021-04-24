@@ -15,7 +15,7 @@ asdfasdfasdfasjdfhsaf
 ksadfjsadf
 ```
 
-![iamge](../assets/images/bullet.png)
+![image](../assets/images/bullet.png)
 sadfdsafsadfsdfadsafsdfadsfhsfdasfklasdf  
 
 Biraz da kutu çizelim   
@@ -25,6 +25,7 @@ Biraz da kutu çizelim
 doğru mudur hocam.  
 
 Saygılarımla
+
 
 
 

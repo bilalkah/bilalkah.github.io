@@ -25,5 +25,5 @@ def validate(file)
   exit 1
 end
 
-#validate 'index.html'
+# validate 'index.html'
 validate File.join 'assets', 'css', 'style.css'
