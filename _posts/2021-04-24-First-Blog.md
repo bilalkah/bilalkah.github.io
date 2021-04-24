@@ -25,6 +25,8 @@ Biraz da kutu çizelim
 | out of stock | 1   | nice  |
 | ok           | good `oreos`      | hmm   |
 | ok           | good `zoute` drop | 2 |  
+
+
 doğru mudur hocam.  
 
 Saygılarımla  
