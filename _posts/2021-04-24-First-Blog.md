@@ -19,9 +19,9 @@ ksadfjsadf
 sadfdsafsadfsdfadsafsdfadsfhsfdasfklasdf  
 
 Biraz da kutu çizelim   
-|0|0|1|
-|-|-|-|
-|3|2|1|  
+| 0 | 0 | 1 |
+|---|---|---|
+| 3 | 2 | 1 |  
 doğru mudur hocam.  
 
 Saygılarımla  
