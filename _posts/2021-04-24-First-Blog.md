@@ -20,7 +20,7 @@ sadfdsafsadfsdfadsafsdfadsfhsfdasfklasdf
 
 Biraz da kutu çizelim   
 | head1        | head two          | three |
-|:-------------|:------------------|:------|
+|-------------|------------------|------|
 | ok           | good swedish fish | nice  |
 | out of stock | 1   | nice  |
 | ok           | good `oreos`      | hmm   |
