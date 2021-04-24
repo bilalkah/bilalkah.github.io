@@ -1,6 +1,7 @@
 AllCops:
   Exclude:
     - _site/**/*
+    NewCops: enable
 
 Layout/LineLength:
   Enabled: false
@@ -8,8 +9,6 @@ Layout/LineLength:
 Gemspec/RequiredRubyVersion:
   Enabled: false
 
-AllCops:
-    NewCops: enable
 Layout/BeginEndAlignment: # (new in 0.91)
   Enabled: true
 Layout/EmptyLinesAroundAttributeAccessor: # (new in 0.83)
