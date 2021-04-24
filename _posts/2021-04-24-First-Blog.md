@@ -24,7 +24,7 @@ Biraz da kutu çizelim
 | ok           | good swedish fish | nice  |
 | out of stock | 1   | nice  |
 | ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | 2 |
+| ok           | good `zoute` drop | 2 |  
 doğru mudur hocam.  
 
 Saygılarımla  
