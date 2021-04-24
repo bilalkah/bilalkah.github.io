@@ -24,11 +24,6 @@ defaults:
     values:
       layout: "post"
 
-future: true
-plugins:
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-sitemap
 
 # Custom variables
 owner : "bilalkah"
