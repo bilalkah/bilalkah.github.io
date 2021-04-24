@@ -20,7 +20,8 @@ sadfdsafsadfsdfadsafsdfadsfhsfdasfklasdf
 
 Biraz da kutu çizelim   
 | 0 | 0 | 1 |
-|---|---|---|
+|-------|--------|---------|
+| 1 | 2 | 3 |
 | 3 | 2 | 1 |  
 doğru mudur hocam.  
 
