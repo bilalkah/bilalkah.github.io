@@ -19,10 +19,12 @@ ksadfjsadf
 sadfdsafsadfsdfadsafsdfadsfhsfdasfklasdf  
 
 Biraz da kutu çizelim   
-| 0 | 0 | 1 |
-|-------|--------|---------|
-| 1 | 2 | 3 |
-| 3 | 2 | 1 |  
+| head1        | head two          | three |
+|:-------------|:------------------|:------|
+| ok           | good swedish fish | nice  |
+| out of stock | 1   | nice  |
+| ok           | good `oreos`      | hmm   |
+| ok           | good `zoute` drop | 2 |
 doğru mudur hocam.  
 
 Saygılarımla  
