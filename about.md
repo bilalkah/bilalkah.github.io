@@ -25,6 +25,8 @@ I am a computer engineering student who wants to improve himself in computer sci
 - Turkish : Native
 - English : Upper Intermediate
 
+---
+
 ## Education
 
 ### BS, Computer Engneerng, Electrcal-Electronc Faculty, GPA: 3.20/4 Grade: 3 
@@ -35,7 +37,7 @@ Yildiz Technical University, Istanbul, Turkey
 2020 February-July  
 Warsaw University of Tecnology, Warsaw, Poland (Erasmus Exchange Program)
 
-
+---
 ## Other Credentials
 
 ### President of Multidisciplinary Innovation Technologies (MİNT) 2020/2021
