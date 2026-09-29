@@ -1,16 +1,15 @@
----
-layout: default
----
-
-
-
-<ul>
-    {% for post in paginator.posts %}
-      <li>
-          <h2><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}.html">{{ post.title }}</a></h2>
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
-          <p>{{ post.content | strip_html | truncatewords:50 }}</p>
-      </li>
-    {% endfor %}
-</ul>
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Wolfenstein engine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://bilalkah.github.io/wolfenstein/">
+  <meta http-equiv="refresh" content="0; url=/wolfenstein/">
+  <script>location.replace("/wolfenstein/");</script>
+</head>
+<body>
+  <p>This site has moved to
+    <a href="/wolfenstein/">bilalkah.github.io/wolfenstein</a>.</p>
+</body>
+</html>
