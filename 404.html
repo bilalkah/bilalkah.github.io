@@ -2,15 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Wolfenstein engine</title>
+  <title>Last Signal from Karakale</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <link rel="canonical" href="https://bilalkah.github.io/wolfenstein/">
-  <meta http-equiv="refresh" content="0; url=/wolfenstein/">
-  <script>location.replace("/wolfenstein/");</script>
+  <link rel="canonical" href="https://bilalkah.github.io/karakale/">
+  <script>
+    // The game's site was /wolfenstein/ before the repository was renamed:
+    // its old links go to the same page under /karakale/, with their query
+    // (a server or name to join) and anchor. Anything else goes home.
+    const path = location.pathname;
+    const moved = path.startsWith("/wolfenstein/") || path === "/wolfenstein"
+      ? "/karakale/" + path.replace(/^\/wolfenstein\/?/, "")
+      : "/karakale/";
+    location.replace(moved + location.search + location.hash);
+  </script>
+  <noscript><meta http-equiv="refresh" content="0; url=/karakale/"></noscript>
 </head>
 <body>
   <p>This page is gone; the site is now at
-    <a href="/wolfenstein/">bilalkah.github.io/wolfenstein</a>.</p>
+    <a href="/karakale/">bilalkah.github.io/karakale</a>.</p>
 </body>
 </html>

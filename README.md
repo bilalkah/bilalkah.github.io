@@ -1,14 +1,16 @@
 # bilalkah.github.io
 
-This site only redirects to the
-[Wolfenstein engine's site](https://bilalkah.github.io/wolfenstein/), which
-is published from the [wolfenstein](https://github.com/bilalkah/wolfenstein)
+This site only redirects to the site of
+[Last Signal from Karakale](https://bilalkah.github.io/karakale/), which is
+published from the [karakale](https://github.com/bilalkah/karakale)
 repository by its GitHub Actions workflow.
 
-- `index.html` sends `/` to `/wolfenstein/`.
+- `index.html` sends `/` to `/karakale/`.
 - `404.html` does the same for every other path, such as the old blog's
-  pages. Paths under `/wolfenstein/` belong to the wolfenstein repository's
-  site and never reach this one.
+  pages. Links to `/wolfenstein/...`, the game's address before the
+  repository was renamed, go to the same page under `/karakale/`, with
+  their query and anchor. Paths under `/karakale/` belong to the karakale
+  repository's site and never reach this one.
 - `.nojekyll` makes GitHub Pages serve the files as they are.
 
 GitHub Pages serves this repository from the root of its default branch
