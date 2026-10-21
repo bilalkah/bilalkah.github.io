@@ -2,24 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Last Signal from Karakale</title>
+  <title>Page not found — Bilal Kahraman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <link rel="canonical" href="https://bilalkah.github.io/karakale/">
   <script>
-    // The game's site was /wolfenstein/ before the repository was renamed:
-    // its old links go to the same page under /karakale/, with their query
-    // (a server or name to join) and anchor. Anything else goes home.
+    // Project Pages sites, such as /karakale/ and /jsonb_slice/, are served
+    // by their own repositories. This file handles only paths that do not
+    // belong to an active project site. Keep the old game links working.
     const path = location.pathname;
-    const moved = path.startsWith("/wolfenstein/") || path === "/wolfenstein"
-      ? "/karakale/" + path.replace(/^\/wolfenstein\/?/, "")
-      : "/karakale/";
-    location.replace(moved + location.search + location.hash);
+    if (path.startsWith("/wolfenstein/") || path === "/wolfenstein") {
+      const moved = "/karakale/" + path.replace(/^\/wolfenstein\/?/, "");
+      location.replace(moved + location.search + location.hash);
+    }
   </script>
-  <noscript><meta http-equiv="refresh" content="0; url=/karakale/"></noscript>
 </head>
 <body>
-  <p>This page is gone; the site is now at
-    <a href="/karakale/">bilalkah.github.io/karakale</a>.</p>
+  <main>
+    <h1>Page not found</h1>
+    <p>This address does not match a published page.</p>
+    <p><a href="/">Return to the project index</a>.</p>
+  </main>
 </body>
 </html>
