@@ -1,8 +1,8 @@
 # bilalkah.github.io
 
-The root address redirects to
-[Last Signal from Karakale](https://bilalkah.github.io/karakale/). Project
-repositories publish their own sites below this address:
+The root address is Bilal Kahraman's project index. It introduces the work
+and links to the source and project pages. Project repositories publish their
+own sites below this address:
 
 - `/karakale/` is published from the
   [karakale](https://github.com/bilalkah/karakale) repository.
@@ -11,12 +11,10 @@ repositories publish their own sites below this address:
   is a release index. Each tag owns a stable documentation path such as
   `/jsonb_slice/0.1.0/`.
 
-- `index.html` sends `/` to `/karakale/`.
-- `404.html` does the same for every other path, such as the old blog's
-  pages. Links to `/wolfenstein/...`, the game's address before the
-  repository was renamed, go to the same page under `/karakale/`, with
-  their query and anchor. Paths under an active project site belong to that
-  project's repository and never reach this one.
+- `index.html` and `styles.css` provide the root project index.
+- `404.html` redirects only the old `/wolfenstein/...` paths to `/karakale/`.
+  Other missing paths show a normal error page. Paths under an active project
+  site belong to that project's repository and never reach this one.
 - `.nojekyll` makes GitHub Pages serve the files as they are.
 
 GitHub Pages serves this repository from the root of its default branch

@@ -2,14 +2,190 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Last Signal from Karakale</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="canonical" href="https://bilalkah.github.io/karakale/">
-  <meta http-equiv="refresh" content="0; url=/karakale/">
-  <script>location.replace("/karakale/");</script>
+  <meta name="description" content="Bilal Kahraman's work in database internals, systems software, and C++.">
+  <meta name="theme-color" content="#f2eee4">
+  <title>Bilal Kahraman — Database and systems work</title>
+  <link rel="canonical" href="https://bilalkah.github.io/">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <p>This site has moved to
-    <a href="/karakale/">bilalkah.github.io/karakale</a>.</p>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="/" aria-label="Bilal Kahraman, home">
+      <span class="wordmark-mark" aria-hidden="true">BK</span>
+      <span>Bilal Kahraman</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#projects">Projects</a>
+      <a href="https://github.com/bilalkah">GitHub</a>
+      <a href="https://www.linkedin.com/in/bilalkah/">LinkedIn</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Database internals / systems software / C++</p>
+        <h1 id="hero-title">Work that goes below the surface.</h1>
+        <p class="hero-intro">
+          I am Bilal Kahraman. I work on database engines and systems code.
+          This site collects project pages and links to their source, design
+          notes, release limits, and demonstrations.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">See the projects</a>
+          <a class="text-link" href="https://github.com/bilalkah">View my GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <div class="project-index" aria-label="Project index">
+        <div class="index-bar">
+          <span>project_index</span>
+          <span>2 entries</span>
+        </div>
+        <div class="index-head" aria-hidden="true">
+          <span>Name</span>
+          <span>Area</span>
+          <span>Route</span>
+        </div>
+        <a class="index-row" href="https://bilalkah.github.io/jsonb_slice/">
+          <strong>jsonb_slice</strong>
+          <span>PostgreSQL</span>
+          <code>/jsonb_slice/</code>
+        </a>
+        <a class="index-row" href="/karakale/">
+          <strong>Karakale</strong>
+          <span>C++ / SDL</span>
+          <code>/karakale/</code>
+        </a>
+        <div class="index-status">
+          <span class="status-dot" aria-hidden="true"></span>
+          Project pages keep their own code and documentation.
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <p class="eyebrow">Published here</p>
+        <h2 id="projects-title">Two projects, two kinds of internals.</h2>
+        <p>Open a project to see its current implementation and limits.</p>
+      </div>
+
+      <article class="project project-database">
+        <div class="project-number" aria-hidden="true">01</div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span>PostgreSQL extension experiment</span>
+            <span>First release: 0.1.0</span>
+          </div>
+          <h3>jsonb_slice</h3>
+          <p class="project-question">
+            Can PostgreSQL read one field from a large <code>jsonb</code> value
+            without reading the complete value?
+          </p>
+          <p>
+            Version 0.1.0 provides an installable extension shell and defines
+            the research question. It has no JSONB accessor or performance
+            claim.
+          </p>
+          <div class="project-links">
+            <a class="button button-light" href="https://bilalkah.github.io/jsonb_slice/">Read the documentation</a>
+            <a class="text-link" href="https://github.com/bilalkah/jsonb_slice">View source <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <figure class="storage-figure">
+          <figcaption>Current version boundary</figcaption>
+          <div class="document-line">
+            <code>CREATE EXTENSION jsonb_slice;</code>
+          </div>
+          <div class="chunk-labels" aria-hidden="true">
+            <span>control</span><span>SQL</span><span>PGXS</span><span>test</span>
+          </div>
+          <div class="chunks" aria-label="Four parts of the version 0.1.0 package shell.">
+            <span></span><span class="chunk-selected"></span><span></span><span></span>
+          </div>
+          <div class="read-path" aria-hidden="true">
+            <span>version 0.1.0</span>
+            <span class="read-line"></span>
+            <span>no JSONB accessor</span>
+          </div>
+        </figure>
+      </article>
+
+      <article class="project project-engine">
+        <div class="project-number" aria-hidden="true">02</div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span>Raycasting game engine</span>
+            <span>C++ / SDL</span>
+          </div>
+          <h3>Last Signal from Karakale</h3>
+          <p class="project-question">
+            A Wolfenstein-style engine built to study real-time rendering,
+            navigation, and game state.
+          </p>
+          <p>
+            The engine uses DDA raycasting, A* pathfinding, and state-based
+            enemy behavior. The project page presents the engine and keeps the
+            source available for inspection.
+          </p>
+          <div class="project-links">
+            <a class="button button-dark" href="/karakale/">Open the project</a>
+            <a class="text-link" href="https://github.com/bilalkah/karakale">View source <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <figure class="raycast-figure">
+          <figcaption>Raycasting view</figcaption>
+          <svg viewBox="0 0 560 330" role="img" aria-labelledby="raycast-title raycast-desc">
+            <title id="raycast-title">Abstract raycasting scene</title>
+            <desc id="raycast-desc">A corridor is formed by wall planes that meet at a distant point.</desc>
+            <rect width="560" height="165" class="sky" />
+            <rect y="165" width="560" height="165" class="floor" />
+            <path d="M0 0 L220 125 L220 205 L0 330 Z" class="wall-left" />
+            <path d="M560 0 L340 125 L340 205 L560 330 Z" class="wall-right" />
+            <rect x="220" y="125" width="120" height="80" class="back-wall" />
+            <line x1="0" y1="165" x2="560" y2="165" class="horizon" />
+            <line x1="280" y1="0" x2="280" y2="330" class="crosshair" />
+            <line x1="258" y1="165" x2="302" y2="165" class="crosshair" />
+          </svg>
+        </figure>
+      </article>
+    </section>
+
+    <section class="method" aria-labelledby="method-title">
+      <div>
+        <p class="eyebrow">How to read this site</p>
+        <h2 id="method-title">The boundary is part of the work.</h2>
+      </div>
+      <div class="method-list">
+        <div>
+          <span>01</span>
+          <h3>Start with the project page</h3>
+          <p>Each project states what it does before it asks you to read the code.</p>
+        </div>
+        <div>
+          <span>02</span>
+          <h3>Check the exact version</h3>
+          <p>jsonb_slice keeps stable documentation for each public version.</p>
+        </div>
+        <div>
+          <span>03</span>
+          <h3>Follow the source</h3>
+          <p>The implementation and its history stay close to the explanation.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Bilal Kahraman <span aria-hidden="true">/</span> Istanbul</p>
+    <div>
+      <a href="https://github.com/bilalkah">GitHub</a>
+      <a href="https://www.linkedin.com/in/bilalkah/">LinkedIn</a>
+    </div>
+  </footer>
 </body>
 </html>
