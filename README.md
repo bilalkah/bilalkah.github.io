@@ -4,6 +4,8 @@ The root address is Bilal Kahraman's project index. It introduces the work
 and links to the source and project pages. Project repositories publish their
 own sites below this address:
 
+- `/kergit-server/` is published from the
+  [kergit-server](https://github.com/bilalkah/kergit-server) repository.
 - `/karakale/` is published from the
   [karakale](https://github.com/bilalkah/karakale) repository.
 - `/jsonb_slice/` is published from the

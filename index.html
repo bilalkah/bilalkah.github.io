@@ -43,13 +43,18 @@
       <div class="project-index" aria-label="Project index">
         <div class="index-bar">
           <span>project_index</span>
-          <span>2 entries</span>
+          <span>3 entries</span>
         </div>
         <div class="index-head" aria-hidden="true">
           <span>Name</span>
           <span>Area</span>
           <span>Route</span>
         </div>
+        <a class="index-row" href="/kergit-server/">
+          <strong>Kergit</strong>
+          <span>Realtime systems</span>
+          <code>/kergit-server/</code>
+        </a>
         <a class="index-row" href="https://bilalkah.github.io/jsonb_slice/">
           <strong>jsonb_slice</strong>
           <span>PostgreSQL</span>
@@ -70,12 +75,66 @@
     <section class="projects" id="projects" aria-labelledby="projects-title">
       <div class="section-heading">
         <p class="eyebrow">Published here</p>
-        <h2 id="projects-title">Two projects, two kinds of internals.</h2>
+        <h2 id="projects-title">Three projects, three kinds of systems work.</h2>
         <p>Open a project to see its current implementation and limits.</p>
       </div>
 
-      <article class="project project-database">
+      <article class="project project-realtime">
         <div class="project-number" aria-hidden="true">01</div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span>Real-time communication platform</span>
+            <span>C++ / Protobuf / LiveKit</span>
+          </div>
+          <h3>Kergit</h3>
+          <p class="project-question">
+            A Discord-like text and voice system designed around a C++
+            signaling core.
+          </p>
+          <p>
+            Kergit keeps sessions, state synchronization, backpressure, and
+            voice ownership server-authoritative while LiveKit handles the
+            media plane. The project page explains the architecture and its
+            current prototype boundary.
+          </p>
+          <div class="project-links">
+            <a class="button button-signal" href="/kergit-server/">Open the project</a>
+            <a class="text-link" href="https://github.com/bilalkah/kergit-server">View source <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <figure class="signal-figure">
+          <figcaption>
+            <span>session_trace</span>
+            <span class="signal-status"><i aria-hidden="true"></i> connected</span>
+          </figcaption>
+          <div class="signal-row">
+            <code>AUTH</code>
+            <span class="signal-out">→</span>
+            <small>session</small>
+          </div>
+          <div class="signal-row">
+            <code>STATE_SYNC</code>
+            <span class="signal-in">←</span>
+            <small>hubs · channels</small>
+          </div>
+          <div class="signal-row signal-selected">
+            <code>VOICE_JOIN</code>
+            <span class="signal-out">→</span>
+            <small>channel alpha</small>
+          </div>
+          <div class="signal-row">
+            <code>VOICE_TOKEN</code>
+            <span class="signal-in">←</span>
+            <small>node · key · resume</small>
+          </div>
+          <div class="signal-route" aria-label="The client sends control messages to the C++ core, which authorizes access to LiveKit.">
+            <span>client</span><b aria-hidden="true">→</b><span>C++ core</span><b aria-hidden="true">→</b><span>LiveKit</span>
+          </div>
+        </figure>
+      </article>
+
+      <article class="project project-database">
+        <div class="project-number" aria-hidden="true">02</div>
         <div class="project-body">
           <div class="project-meta">
             <span>PostgreSQL extension experiment</span>
@@ -116,7 +175,7 @@
       </article>
 
       <article class="project project-engine">
-        <div class="project-number" aria-hidden="true">02</div>
+        <div class="project-number" aria-hidden="true">03</div>
         <div class="project-body">
           <div class="project-meta">
             <span>Raycasting game engine</span>
@@ -168,8 +227,8 @@
         </div>
         <div>
           <span>02</span>
-          <h3>Check the exact version</h3>
-          <p>jsonb_slice keeps stable documentation for each public version.</p>
+          <h3>Check the current boundary</h3>
+          <p>Project pages separate implemented paths from experiments and active work.</p>
         </div>
         <div>
           <span>03</span>
